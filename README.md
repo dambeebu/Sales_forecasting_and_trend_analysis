@@ -7,9 +7,19 @@ This project analyzes sales data, visualize trends and forecasts future sales us
   - Sales generally show a positive trend over the years, with noticeable seasonality in certain months.
   - The highest sales are typically observed in the last quarter of each year, indicating strong end-of-year demand.
    <img src="images/monthly_sales_2018.png" alt="Monthly Sales 2018" width="600">
+
+   <img src="images/monthly_sales_2017.png" alt="Monthly Sales 2017" width="600">
+
+   <img src="images/monthly_sales_2016.png" alt="Monthly Sales 2016" width="600">
+
+   <img src="images/monthly_sales_2015.png" alt="Monthly Sales 2015" width="600">
+   
 - **Top States:**
-  - The top 10 states contribute a significant portion of total sales, with certain states consistently outperforming others.
+  - The top 10 states contribute a significant portion of total sales, with California consistently outperforming others across the different categories of products.
   - State-level analysis reveals regional strengths and opportunities for targeted marketing.
+
+  <img src="images/Top_revenue_generating_states.png" alt="Top Revenue Generating States" width="600">
+    
 - **Category Insights:**
   - Technology, Furniture, and Office Supplies each have distinct sales patterns across states.
   - Technology often leads in total sales, but some states show higher demand for Furniture or Office Supplies.
