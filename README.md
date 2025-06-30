@@ -1,6 +1,6 @@
 # Sales Forecasting and Trend Analysis
 
-This project analyzes sales data, visualize trends and forecasts future sales using multiple time series models. 
+This project analyzes a superstore sales dataset, visualizes trends and forecasts future sales using multiple time series models(SARIMA, Prophet, ARIMA, Exponential smoothing)
 
 ## Key Findings
 - **Sales Trends:**
