@@ -6,7 +6,7 @@ This project analyzes sales data, visualize trends and forecasts future sales us
 - **Sales Trends:**
   - Sales generally show a positive trend over the years, with noticeable seasonality in certain months.
   - The highest sales are typically observed in the last quarter of each year, indicating strong end-of-year demand.
-  - ![Monthly Sales 2018](images/monthly_sales_2018)
+    ![Monthly Sales 2018](images/monthly_sales_2018.png)
 - **Top States:**
   - The top 10 states contribute a significant portion of total sales, with certain states consistently outperforming others.
   - State-level analysis reveals regional strengths and opportunities for targeted marketing.
