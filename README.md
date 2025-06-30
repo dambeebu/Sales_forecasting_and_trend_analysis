@@ -1,6 +1,10 @@
 # Sales Forecasting and Trend Analysis
 
-This project analyzes a superstore sales dataset, visualizes trends and forecasts future sales using multiple time series models(SARIMA, Prophet, ARIMA, Exponential smoothing)
+This project, "Sales Forecasting and Trend Analysis," is designed to provide comprehensive insights into sales data from a superstore by leveraging time series analysis and forecasting techniques. The primary objectives are to visualize historical sales trends, identify key revenue drivers across states and product categories, and build accurate models to predict future sales.
+
+By utilizing advanced statistical models such as SARIMA, ARIMA, Prophet, and Exponential Smoothing, the project evaluates both the accuracy and applicability of each method for business forecasting. The findings enable businesses to make informed decisions regarding inventory management, marketing strategies, and resource allocation by anticipating demand fluctuations and regional sales patterns.
+
+The project delivers actionable recommendations based on model performance and provides clear visualizations to support data-driven decision-making for stakeholders.
 
 ## Key Findings
 - **Sales Trends:**
