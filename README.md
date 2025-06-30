@@ -19,45 +19,61 @@ This project analyzes sales data, visualize trends and forecasts future sales us
   - State-level analysis reveals regional strengths and opportunities for targeted marketing.
 
   <img src="images/Top_revenue_generating_states.png" alt="Top Revenue Generating States" width="600">
+
+  <img src="images/sales_by_category.png" alt="Sales by category" width="600">
     
 - **Category Insights:**
   - Technology, Furniture, and Office Supplies each have distinct sales patterns across states.
   - Technology often leads in total sales, but some states show higher demand for Furniture or Office Supplies.
+ 
+    <img src="images/Technology_sales.png" alt="Technology Sales" width="600">
+
+    <img src="images/furniture_sales.png" alt="Furniture Sales" width="600">
+
+    <img src="images/Office_supplies_sales.png" alt="Office_supplies_sales" width="600">
+
+    
 - **Forecasting Performance:**
   - All four models (SARIMA, ARIMA, Prophet, Exponential Smoothing) provide reasonable forecasts, with SARIMA and Prophet generally achieving the lowest error metrics (MAE, RMSE, MAPE).
   - The models successfully capture both trend and seasonality, with forecasts indicating continued growth in the coming months.
+ 
+<img src="images/Prophet_forecast.png" alt="Prophet forecast" width="600">
+
+<img src="images/SARIMA_forecast.png" alt="SARIMA forecast" width="600">
+
+<img src="images/ARIMA_forecast.png" alt="ARIMA forecast" width="600">
+
+<img src="images/Exponential_smoothing_forecast.png" alt="Exponential smoothing forecast" width="600">
+
+## Model Performance Summary
+
+| Metric      | SARIMA      | ARIMA       | Prophet     | Exp. Smoothing |
+|-------------|-------------|-------------|-------------|----------------|
+| **MAE**     | 10,454.65   | 12,654.76   | 12,470.60   | 14,919.38      |
+| **RMSE**    | 13,817.40   | 14,825.86   | 13,759.65   | 16,782.07      |
+| **MAPE**    | 21.06%      | 22.72%      | 20.69%      | 24.52%         |
+
+## Key Insights
+
+- **Prophet** achieved the lowest MAPE (20.69%), indicating the most accurate relative forecasts.
+- **SARIMA** produced the lowest absolute errors (MAE and RMSE), making it a strong candidate as well.
+- **Exponential Smoothing** had the highest errors across all metrics, suggesting it is less suitable for this dataset.
+- **ARIMA** performed better than Exponential Smoothing but was outperformed by Prophet and SARIMA.
+
+## Recommendation
+
+- **Prophet** is recommended for business forecasting due to its superior relative accuracy (MAPE).
+- **SARIMA** is also a viable model, especially where lower absolute error is required.
+  
 - **Business Implications:**
   - The analysis supports data-driven decision-making for inventory planning, sales strategy, and resource allocation.
   - Forecasts can be used to anticipate demand spikes and optimize supply chain operations.
-
-## Features
-- **Data Loading & Preprocessing:**
-  - Reads sales data from CSV.
-  - Parses date columns and sets up time-based features.
-- **Exploratory Data Analysis (EDA):**
-  - Visualizes sales trends by month, year, state, and category.
-  - Identifies top-performing states and categories (Furniture, Office Supplies, Technology).
-- **Time Series Forecasting:**
-  - Implements and compares four forecasting models:
-    - SARIMA (Seasonal ARIMA)
-    - ARIMA
-    - Prophet
-    - Exponential Smoothing (Holt-Winters)
-  - Evaluates models using MAE, RMSE, and MAPE.
-  - Visualizes actual vs. predicted sales and forecasts for the next 6–12 months.
-- **Model Saving:**
-  - Saves all trained models as `.pkl` files for future use or deployment.
-
 
 ## Requirements
 - Python 3.7+
 - pandas, numpy, matplotlib, seaborn
 - statsmodels, scikit-learn, prophet, joblib
 
-Install requirements with:
-```bash
-pip install pandas numpy matplotlib seaborn statsmodels scikit-learn prophet joblib
-```
 
 ## Usage
 1. Open `model.ipynb` in Jupyter or VS Code.
@@ -72,8 +88,5 @@ pip install pandas numpy matplotlib seaborn statsmodels scikit-learn prophet job
    - `prophet_model.pkl`
    - `exp_smoothing_model.pkl`
 
-## Customization
-- Tune model parameters for better accuracy.
-- Adapt the workflow for other time series datasets.
 
 
